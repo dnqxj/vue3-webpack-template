@@ -1,0 +1,6 @@
+{
+  // 类型为tsx的时候需要处理
+  "presets": ["@babel/preset-typescript"],
+  // vue中jsx的处理插件
+  "plugins": ["@vue/babel-plugin-jsx"]
+}
