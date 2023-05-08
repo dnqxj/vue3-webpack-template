@@ -39,6 +39,7 @@ const config = {
     rules: [
       {
         test: /\.vue$/,
+        exclude: ["/node_modules/"],
         loader: "vue-loader"
       },
       {
@@ -56,14 +57,17 @@ const config = {
       },
       {
         test: /\.css$/i,
+        exclude: ["/node_modules/"],
         use: [stylesHandler, "css-loader"]
       },
       {
         test: /\.s[ac]ss$/i,
+        exclude: ["/node_modules/"],
         use: [stylesHandler, "css-loader", "sass-loader"]
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        exclude: ["/node_modules/"],
         type: "asset"
       }
 
